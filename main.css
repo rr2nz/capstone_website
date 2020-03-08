@@ -1,0 +1,60 @@
+/*
+Filename: main.css
+Author: Ryan Riley
+Computing ID: rr2nz
+Date: 03/07/2020
+*/
+
+body {
+  height: 100%;
+  margin: 0;
+  color: #ffffff;
+  /*
+  Source for linear gradient background CSS:
+  https://stackoverflow.com/questions/2869212/css3-gradient-background-set-on-body-doesnt-stretch-but-instead-repeats
+  */
+  background-image: linear-gradient(#cc2b5e, #753a88);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.left {
+  left: 0;
+  /* background-color: #ffcc99; */
+}
+
+.right {
+  right: 0;
+  /* background-color: red; */
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones and tablets: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  .imgex { width: 75%; }
+
+  #loginForm {
+    width: 100%;
+  }
+}
